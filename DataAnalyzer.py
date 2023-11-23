@@ -2,7 +2,7 @@ class DataAnalyzer:
     def __init__(self, districts: dict, ballot_boxes: dict, neighbourhoods: dict):
         self.districts = districts  # a dictionary with keys being district_name and values being district object
         self.ballot_boxes = ballot_boxes  # a dictionary with keys being tuple (district, ballot_box_no) and values being ballot_box object
-        self.neighbourhoods = neighbourhoods
+        self.neighbourhoods = neighbourhoods # a dictionary with keys being neighbourhood name and values being neighbourhood object
         self.total_vote = None  # the number of votes that are valid in the whole city -> int
         self.total_parties_by_vote_count = None  # the number of votes that each party received in the whole city -> dict(party_name: str, party_vote_: int)
         self.total_parties_by_percentage = None  # the percentage of total votes that each party received in the whole city -> dict(party_name: str, party_percentage: float)
