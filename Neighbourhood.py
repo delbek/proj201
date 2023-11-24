@@ -3,7 +3,7 @@ from BallotBox import BallotBox
 
 class Neighbourhood:
     def __init__(self, neighbourhood_name: str, district: str):
-        self.neighbourhood_name = neighbourhood_name  # Neighbourhood name
+        self.neighbourhood_name = neighbourhood_name  # Primary Key
         self.district = district  # District name in which this neighbourhood is located
         self.ballot_boxes = list()  # All the ballot boxes that this neighbourhood consists of
         self.total_vote = 0  # Total vote of this neighbourhood
