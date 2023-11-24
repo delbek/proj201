@@ -2,7 +2,7 @@ This project was made for the Proj201 course, a course required to be taken by a
 
 
 Features planned to be included in the future commits:
-- Writing all results to a file in a sorted order starting from the best approximation
+- Writing all results to a file in a sorted order starting from the best approximation (completed)
 - Analyzing 2014 and 2019 elections at the same time to get even a better insight
 - Creating an API that gets the coordinates of the location it is given
 - Making a GUI application that shows the locations of constituencies that best approximated the previous elections to provide a visual view of the results
