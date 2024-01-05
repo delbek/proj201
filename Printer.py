@@ -7,7 +7,7 @@ class Printer:
         print()
         print(self.generate_frame("BALLOT BOXES"))
         for key in ballot_box_dict.keys():
-            print(self.generate_body("No: {} ballot box located in {}/{} has an error margin of {}".format(key.ballot_box_no, key.neighbourhood, key.district, ballot_box_dict[key])))
+            print(self.generate_body("No: {} ballot box located in {}/{} has an error margin of {}".format(key.ballot_box_no, key.neighbourhood, key.district, round(ballot_box_dict[key], 2))))
         print(self.generate_frame("BALLOT BOXES ENDS"))
         print()
 
@@ -15,7 +15,7 @@ class Printer:
         print()
         print(self.generate_frame("DISTRICTS"))
         for key in district_dict.keys():
-            print(self.generate_body("District: {} has an error margin of {}".format(key.name, district_dict[key])))
+            print(self.generate_body("District: {} has an error margin of {}".format(key.name, round(district_dict[key], 2))))
         print(self.generate_frame("DISTRICTS ENDS"))
         print()
 
@@ -23,7 +23,7 @@ class Printer:
         print()
         print(self.generate_frame("NEIGHBOURHOODS"))
         for key in neighbourhood_dict.keys():
-            print(self.generate_body("{} has an error margin of {}".format(key.neighbourhood_name, neighbourhood_dict[key])))
+            print(self.generate_body("{}/{} has an error margin of {}".format(key.neighbourhood_name, key.district, round(neighbourhood_dict[key]), 2)))
         print(self.generate_frame("NEIGHBOURHOODS ENDS"))
         print()
 
